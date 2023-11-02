@@ -8,10 +8,7 @@ public class Solution {
 		else if (x < 10)
 			return true;
 		else if (x < 100) {
-			if (x % 10 == x / 10)
-				return true;
-			else
-				return false;
+            return x % 10 == x / 10;
 		} else {
 			int last = x % 10;
 			if (Integer.toString(x).charAt(0) != Integer.toString(x).charAt(
